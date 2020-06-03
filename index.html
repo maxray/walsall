@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="" />
+    <style>
+      @font-face {
+        font-family: "basier_circleregular";
+        src: url("assets/fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.eot");
+        src: url("assets/fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("assets/fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.woff2")
+            format("woff2"),
+          url("assets/fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.woff")
+            format("woff"),
+          url("assets/fonts/Basier-Circle-regular-webfont/basiercircle-regular-webfont.ttf")
+            format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "basier_circleregular_italic";
+        src: url("assets/fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.eot");
+        src: url("assets/fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("assets/fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.woff2") format("woff2"),
+          url("assets/fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.woff") format("woff"),
+          url("assets/fonts/Basier-Circle-regularitalic-webfont/basiercircle-regularitalic-webfont.ttf") format("truetype");
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: "basier_circlesemibold";
+        src: url("basiercircle-semibold-webfont.eot");
+        src: url("basiercircle-semibold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("basiercircle-semibold-webfont.woff2") format("woff2"),
+          url("basiercircle-semibold-webfont.woff") format("woff"),
+          url("basiercircle-semibold-webfont.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "basier_circlesemibold_italic";
+        src: url("basiercircle-semibolditalic-webfont.eot");
+        src: url("basiercircle-semibolditalic-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("basiercircle-semibolditalic-webfont.woff2") format("woff2"),
+          url("basiercircle-semibolditalic-webfont.woff") format("woff"),
+          url("basiercircle-semibolditalic-webfont.ttf") format("truetype");
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      @font-face {
+        font-family: "basier_circlebold";
+        src: url("Basier-Circle-bold-webfont/basiercircle-bold-webfont.eot");
+        src: url("Basier-Circle-bold-webfont/basiercircle-bold-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("Basier-Circle-bold-webfont/basiercircle-bold-webfont.woff2")
+            format("woff2"),
+          url("Basier-Circle-bold-webfont/basiercircle-bold-webfont.woff")
+            format("woff"),
+          url("Basier-Circle-bold-webfont/basiercircle-bold-webfont.ttf")
+            format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "basier_circlebold_italic";
+        src: url("basiercircle-bolditalic-webfont.eot");
+        src: url("basiercircle-bolditalic-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("basiercircle-bolditalic-webfont.woff2") format("woff2"),
+          url("basiercircle-bolditalic-webfont.woff") format("woff"),
+          url("basiercircle-bolditalic-webfont.ttf") format("truetype");
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      body {
+        font-family: "basier_circleregular";
+        margin:0;
+        padding:0;
+        min-height:100vh;
+      }
+
+      #wrapper {
+          max-width:1200px;
+          margin:auto;
+          padding:3rem;
+      }
+
+      .header {
+          background-image:url(assets/images/header.png);
+          background-size: cover;
+          background-position: center ;
+          width:100%;
+          height:450px;
+          display:flex;
+      }
+
+      h1,
+      h2,
+      h4,
+      h5 {
+        color: #f49c7c;
+      }
+
+      h3 {
+          color: #804933;
+      }
+
+      ul {
+        list-style-image: url(assets/images/bullet.svg);
+        font-family: "basier_circleregular_italic";
+        }
+
+        li {
+            margin-bottom:.5rem;
+        }
+
+      .divider {
+          width:150px;
+          margin:2rem auto 2rem auto;
+          display:block;
+      }
+
+      .divider path { 
+          stroke : #f49c7c !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+
+    </div>
+    <div id="wrapper">
+      <h1>Abundance in Walsall</h1>
+      <h3>
+        A project to profile the wealth of arts and cultural activities
+        available in Walsall town, through the creation of an interactive,
+        digital arts map & directory.
+      </h3>
+
+      <h4>
+        With your support we hope to commission an artist to create a series of
+        illustrations detailing Walsall’s:
+      </h4>
+      <ul>
+        <li>Heritage Buildings & Sites</li>
+        <li>Arts Venues</li>
+        <li>Creative Studios</li>
+        <li>Leisure & Activity Spaces</li>
+      </ul>
+
+      <p>
+        These illustrations will be curated into the online illustrated map to
+        provide a new way for the public to engage with Walsall's heritage,
+        culture & creative scene, whilst creating a useful directory for
+        creative organisations to profile their ventures, venues & activities.
+      </p>
+
+      <p>
+        We will be working with an artist based in Birmingham & the Black
+        Country - Tom Woolley . He is a prominent illustrator within the west
+        midlands, who specialises in illustrated maps.
+      </p>
+
+      <p>
+        To support in developing the map we will work in partnership with
+        Walsall New Art Gallery, Walsall Council (Walsall for All), local
+        businesses, artists and residents to identify the most important items
+        to illustrate.
+      </p>
+
+      <svg id="Layer_1" class="divider" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162.81 39"><path d="M5.41,22.89S32.87,6,53.61,9.46,86.33,31.07,114.67,32s42.94-18.7,42.94-18.7" transform="translate(-1.21 -0.98)" style="fill:none;stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:16px"/></svg>
+
+      <h4>Our project aims to:</h4>
+
+      <ul>
+        <li>
+          Reduce the talent loss from the town to neighbouring towns with more
+          prominent creative infrastructure; Wolverhampton and Birmingham.
+        </li>
+        <li>
+          Help increase visibility and use of venues, activities and creative
+          practices within the town.
+        </li>
+        <li>
+          Profile cultural assets in order to help develop a shared sense of
+          pride in Walsall
+        </li>
+        <li>
+          Aid to support the actioning of experiments and development of new
+          creative ventures in the locality.
+        </li>
+      </ul>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>
